@@ -1,0 +1,60 @@
+[2015-10-15 17:05:34] Start Server!
+[2015-10-15 17:05:37] Demo set Sensor Value!
+[2015-10-15 17:05:37] Demo get Sensor Value!
+[2015-10-15 17:05:38] Demo get Sensor Value!
+[2015-10-15 17:05:38] Demo History get user: singo
+[2015-10-15 17:05:41] Demo get Sensor Value!
+[2015-10-15 17:05:41] Demo get Sensor Value!
+[2015-10-15 17:05:41] Demo History get user: singo
+[2015-10-15 17:05:45] Demo History get user: singo
+[2015-10-15 17:05:46] Demo get Sensor Value!
+[2015-10-15 17:05:46] Demo get Sensor Value!
+[2015-10-15 17:05:47] Demo History get user: singo
+[2015-10-15 17:05:50] Demo History get user: singo
+[2015-10-15 17:05:51] Demo get Sensor Value!
+[2015-10-15 17:05:51] Demo get Sensor Value!
+[2015-10-15 17:05:53] Demo History get user: singo
+[2015-10-15 17:05:57] Demo get Sensor Value!
+[2015-10-15 17:05:57] Demo get Sensor Value!
+[2015-10-15 17:05:57] Demo History get user: singo
+[2015-10-15 17:05:59] Demo History get user: singo
+[2015-10-15 17:06:01] Demo get Sensor Value!
+[2015-10-15 17:06:01] Demo get Sensor Value!
+[2015-10-15 17:06:02] Demo History get user: singo
+[2015-10-15 17:06:05] Demo History get user: singo
+[2015-10-15 17:06:06] Demo get Sensor Value!
+[2015-10-15 17:06:06] Demo get Sensor Value!
+[2015-10-15 17:06:09] Demo History get user: singo
+[2015-10-15 17:06:11] Demo get Sensor Value!
+[2015-10-15 17:06:11] Demo get Sensor Value!
+[2015-10-15 17:06:11] Demo History get user: singo
+[2015-10-15 17:06:16] Demo get Sensor Value!
+[2015-10-15 17:06:16] Demo get Sensor Value!
+[2015-10-15 17:06:16] Demo History get user: singo
+[2015-10-15 17:06:17] Demo History get user: singo
+[2015-10-15 17:06:20] Demo History get user: singo
+[2015-10-15 17:06:21] Demo get Sensor Value!
+[2015-10-15 17:06:21] Demo get Sensor Value!
+[2015-10-15 17:06:23] Demo History get user: singo
+[2015-10-15 17:06:28] Demo get Sensor Value!
+[2015-10-15 17:06:28] Demo get Sensor Value!
+[2015-10-15 17:06:28] Demo History get user: singo
+[2015-10-15 17:06:29] Demo History get user: singo
+[2015-10-15 17:06:31] Demo get Sensor Value!
+[2015-10-15 17:06:31] Demo get Sensor Value!
+[2015-10-15 17:06:32] Demo History get user: singo
+[2015-10-15 17:06:36] Demo History get user: singo
+[2015-10-15 17:06:36] Demo get Sensor Value!
+[2015-10-15 17:06:36] Demo get Sensor Value!
+[2015-10-15 17:06:40] Demo History get user: singo
+[2015-10-15 17:06:41] Demo get Sensor Value!
+[2015-10-15 17:06:41] Demo get Sensor Value!
+[2015-10-15 17:06:41] Demo History get user: singo
+[2015-10-15 17:06:44] Demo History get user: singo
+[2015-10-15 17:06:48] Demo get Sensor Value!
+[2015-10-15 17:06:48] Demo get Sensor Value!
+[2015-10-15 17:06:49] Demo History get user: singo
+[2015-10-15 17:06:52] Demo History get user: singo
+[2015-10-15 17:06:53] Demo get Sensor Value!
+[2015-10-15 17:06:53] Demo get Sensor Value!
+[2015-10-15 17:06:53] Demo History get user: singo

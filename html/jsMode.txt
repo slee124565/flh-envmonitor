@@ -1,0 +1,10 @@
+local httpClient = net.HTTPClient();
+ httpClient:request('http://192.168.0.19:8080/api/demo/set/singo/5', {
+ success = function(response)
+ if tonumber(response.status) == 200 then
+ fibaro:debug("success");
+ else
+ 
+ end
+end,
+});

@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =Clearfix
+--------------------------------------------------------------------------------------------------------*/
+.clear { clear: both; }
+.clearfix:after { content: "."; display:block; height:0; clear:both; visibility:hidden; }/* ----- clear fix for floats ----- */
+.clearfix { display:inline-block; }
+* html .clearfix { height:1%; }/* hides clearfix from IE-mac */
+.clearfix { display:block; }/* end hide from IE-mac */
+.alignleft { float:left; }
+.alignright { float:right; }
+.aligncenter { margin:auto; display:block; }
+.alignnone { clear:both; font-size:0; line-height:0; margin:0; padding:0; border:0; height:0; width:0; }
+.centered { text-align:center;}
+
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* End Clearfix
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Typography
+--------------------------------------------------------------------------------------------------------*/
+body { font-family:'WenQuanYi Zen Hei', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: #666666; background:url(../images/bg-html.png) no-repeat fixed center 10px #fff/*#eee*/; letter-spacing:-1px; }
+a, a > * {-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+p { line-height:1.5; font-size:24px; letter-spacing:-1px }
+.col2-3 p { padding:14px 50px 30px 40px; position:absolute; bottom:0; }
+.col2-3.single-post p { padding:20px 50px 0px 40px; position:relative; }
+.col1-3 p { font-size:20px; padding:0px 30px 21px 30px; position:absolute; bottom:0; }
+.col1-3.colored p, .col1-3 .infos p {font-size:18px; text-align:center; padding:16px 60px 0px 60px; position:relative; color:#fff; }
+.col1-3 .infos p {color:#595755; font-weight:bold; }
+p.blockquote { font-family:Georgia, "WenQuanYi Zen Hei", Times, serif; font-style:italic; font-weight:normal; clear:both }
+.blockquote span, .col1-3.colored p span, .col1-3 .infos p span {font: 12px 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; text-transform:uppercase; letter-spacing:2px; color:#999; }
+.col1-3 .infos p span {color:#595755; font-size:11px;}
+.col1-1 p.blockquote { padding:20px 80px 0px 80px; }
+p span {color:#00000/*#f97220;*/ }
+.col1-3.colored p span {color:#fff; }
+a { color:#f97220; text-decoration:underline; }
+.col1-3.colored a {color:#fff; }
+.col1-3 .infos p a {color:#595755; text-decoration:underline; }
+a:hover { text-decoration:none; color:#f97220; }
+.col1-3.colored a:hover {color:#fff; }
+.col1-3 .infos p a:hover {color:#595755; text-decoration:none; }
+/* End Typography
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Headings
+--------------------------------------------------------------------------------------------------------*/
+#logo-container { width:298px; height:221px; background:#fff; border:1px solid #ddd; text-align:center; z-index:0;}
+h1#logo { display:block; margin:0 auto; margin-top:43px; }
+a h1#logo { display:inline-block; background:url(../images/bg-logo.png) no-repeat top center; background-size:192px 140px; text-decoration:none; width:192px; height:140px; text-indent:-9999px; }
+h2, h3, h4 { line-height:1.5; letter-spacing:-2px; color:#fff; }
+h2 { font-size:48px; padding:38px 40px 19px 40px; }
+.col1-3 h2 { padding:17px 20px 0px 20px; font-size:28px; text-transform:none }
+.col2-3.single-post h2 { padding:43px 40px 24px 40px; line-height:62px; }
+h3 { font-size:28px; padding:47px 30px 21px 30px; letter-spacing:-1px; line-height:36px; }
+h3 a {color:#fff; text-decoration:none}
+h3 a:hover {color:#fff; text-decoration:underline}
+h3.blockquote { font-family:WenQuanYi Zen Hei, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; font-size:26px; clear:both }
+/* End Headings
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Main Content
+--------------------------------------------------------------------------------------------------------*/
+#open-menu {width:298px; height:69px; background:#fff; border:1px solid #ddd; margin-bottom:6px; cursor:pointer; }
+#open-menu p {margin-top:25px; font-size:12px; position:relative }
+#open-menu p span { text-transform:uppercase; letter-spacing:2px; font-family:'WenQuanYi Zen Hei', 'Helvetica Neue', Arial, Helvetica, sans-serif; color:#595755}
+#open-menu .arrow {content:''; height:0; width:0; border-width:6px 6px 6px 6px; border-style:solid; border-color:rgba(191,191,191,1) rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); position:absolute; top:32px; left:259px;}
+.container { padding:30px; width:1280px; position:relative; margin:0 auto;}
+#container { margin-bottom:10px; margin-top:20px}
+.col1-1 { width:940px; margin:10px; background:#595755;}
+.col1-3 { width:300px; height:300px; margin:10px; float:left; background:#595755; }
+
+
+.colSingo1-1 { width:400px; height:300px; margin:10px; float:left; background:#ffca07; } 
+.colSingo1-2 { width:400px; height:300px; margin:10px; float:left; background:#ffca07; }
+.colSingo1-3  { width:400px; height:300px; margin:10px; float:left; background:#a9a8a9; }
+.colSingo2-1  { width:400px; height:300px; margin:10px; float:left; background:#a9a8a9; }
+.colSingo2-2 { width:400px; height:300px; margin:10px; float:left; background:#fa8d29; }
+.colSingo2-3  { width:400px; height:300px; margin:10px; float:left; background:#a9a8a9; }
+.Welcome
+{
+	
+}
+	.Welcome h1
+	{
+		
+		font-size:1.5em;
+		
+	}
+	.Welcome h2
+	{
+		text-align: center;
+		font-size:0.3em;
+		
+	}
+	.Welcome table
+	{
+		padding: 2em 0 0 0;
+	}
+
+
+.item
+	{
+		padding: 1em 0 3em 0;
+		position: relative;
+		text-align: center;
+		font-family: 'WenQuanYi Zen Hei', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		color: #fff;
+		font-size:14px;
+	}
+
+		.item h1 
+		{
+			text-align: left;
+			font-size: 50px;
+		}
+		.item p
+		{
+			text-align: left;
+			font-size:0.8em;
+			color:#000000;
+			
+		}
+		.item singo_info
+		{
+			
+
+			font-size:170px;
+		}
+
+	#header
+	{
+		position: relative;
+		
+		color: #fff;
+	}		
+
+
+
+.col2-3 { width:620px; height:300px; margin:10px; float:left; background:#595755; }
+.no-bg {background:none; }
+.col1-1.borders {width:938px; border:1px solid #ddd; background:#fff; }
+.col1-3.borders {width:298px; height:298px; border:1px solid #ddd; background:#fff; }
+.col2-3.borders {width:618px; height:298px; border:1px solid #ddd; background:#fff; }
+.col2-3.double { width:618px; height:618px; border:1px solid #ddd; background:#fff; }
+.col2-3.single-post { margin:10px; background:#595755; height:auto !important;}
+.col1-3.colored {background:#f97220; }
+.certificate {background:url(../images/bg-certificate.png) center top no-repeat; position:relative; width:100%; height:50px; margin-top:40px; }
+.expand {background:url(../images/bg-expand.png) center top no-repeat; position:relative; width:100%; height:50px; margin-top:40px; }
+.link {background:url(../images/bg-link.png) center top no-repeat; position:relative; width:100%; height:50px; margin-top:40px; }
+.email {background:url(../images/bg-email.png) center top no-repeat; position:relative; width:100%; height:50px; margin-top:40px; }
+.break { height:50px; position:relative; }
+.images { display:block; position:relative; padding:9px; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; background:#fff; overflow:hidden }
+.logo { width:145px; height:108px; background:#fff; text-align:center; border:1px solid #ddd; padding-top:37px; float:left; margin-right:6px; margin-bottom:6px; }
+.logo.last {margin-right:0px; }
+.logo.bottom {margin-bottom:0px; }
+.overflow {overflow:hidden; }
+/*.borderline {width:100%; background:#63615f; border-top:1px solid #4d4b4a; height:1px; }*/
+.borderline.margin-bottom {margin-bottom:11px; }
+.borderline.margin-top {margin-top:30px; }
+/* =End Main Content
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Single Work
+--------------------------------------------------------------------------------------------------------*/
+.dedicated-page-navi {width:100%; height:10px; position:fixed; z-index:300; text-align:center; top:0px; background-color:rgba(255, 255, 255, 0.98) !important; background-color:#fff; -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); }
+.close {position:absolute; top:10px; right:40px; width:58px; height:48px; background:url(../images/bg-close.png) center 10px no-repeat #fbfbfb; background-size: 18px 18px; background-color:rgba(255, 255, 255, 0.98) !important; background-color:#fff; -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); cursor:pointer; }
+.dedicated-page {padding-top:20px; margin-top:50px !important; }
+/* =End Single Work
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Twitter
+--------------------------------------------------------------------------------------------------------*/
+#twitter_update_list { background:#f97220; padding-top:40px; height:260px; }
+ul.jta-tweet-list li { background:url(../images/bg-twitter.png) center 0px no-repeat; background-size:50px 50px; display:block; min-height:100px; font-size:18px; line-height:1.5; padding:64px 40px 0px 40px; color:#fff; letter-spacing:-1px; text-align:center }
+ul.jta-tweet-list li a.jta-tweet-link { color:#fff; text-decoration:none; font-size:18px !important; text-transform:none; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; margin-right:4px; line-height:20px; }
+ul.jta-tweet-list li a.jta-tweet-link:hover { text-decoration:none; color:#fff; }
+ul.jta-tweet-list li a.jta-tweet-timestamp-link { font: 11px 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px; color:#fff; text-decoration:none; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; text-transform:uppercase; line-height:27px; display:block; cursor:default }
+ul.jta-tweet-list li a.jta-tweet-timestamp-link:hover { text-decoration:none; color:#fff; }
+span.jta-tweet-twitter-bird-icon, span.jta-tweet-twitter-bird-icon:hover { display:none }
+a.jta-tweet-a { color:#fff; text-decoration:none; font-weight:bold; }
+a.jta-tweet-a:hover { color:#fff; }
+/* End Twitter
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Googlemaps
+--------------------------------------------------------------------------------------------------------*/
+#map {width:600px; height:600px; margin:0; border:0}
+#map:before, #map:after {	background: none; content: ''; left: 0;	position: absolute;	top: 0;	width: 100%; }
+#map:after {	bottom: 0; top: auto; }
+/* End Googlemaps
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Image Hover
+--------------------------------------------------------------------------------------------------------*/
+.images img {width:100%; display: block; /*z-index:9*/ }
+.infos {width:300px; height:300px; top:0; left:0px; border:0; padding:0; opacity:0; filter:alpha(opacity:0); z-index:12; position:absolute; background:#fff }
+.movable-content {z-index:11; position:absolute; width:298px; height:298px; }
+span.blockquote { font-family:WenQuanYi Zen Hei, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; clear:both }
+/* End Image Hover
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Blog
+--------------------------------------------------------------------------------------------------------*/
+.padding-right {padding-right:20px; }
+.padding-left {padding-left:20px; }
+.margin-left {margin-left:20px; }
+.posted { text-decoration:none; text-transform:uppercase; letter-spacing:2px; font-family:'WenQuanYi Zen Hei', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size:12px; padding:15px 31px;}
+.single-post .posted {padding:15px 41px; }
+.posted a { text-decoration:none; color:#b8b8b8; }
+.posted a:hover { text-decoration:none; color:#b8b8b8;}
+.reply a { color:#f97220; font-weight:bold; }
+.blog h3 {padding:22px 30px 21px 30px; }
+.vertical-align {height:115px; display:table-cell; vertical-align:bottom }
+/* End Blog
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Lists
+--------------------------------------------------------------------------------------------------------*/
+ul.list { position:absolute; padding:0 30px 21px 30px; bottom:0 }
+ul.list li { line-height:1.5; font-size:20px; letter-spacing:-1px; width:auto; padding-left:28px; }
+ul.check li { background:url(../images/bg-check.png) no-repeat 1px 9px; background-size:13px 11px; }
+/* =End Lists
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Footer
+--------------------------------------------------------------------------------------------------------*/
+footer:before {content:''; height:0; width:0; border-width:12px 12px 12px 12px; border-style:solid; border-color:rgba(36,37,39,0) rgba(36,37,39,0) #595755 rgba(36,37,39,0); position:absolute; top:-24px; left:50%; margin-left:-12px; }
+/*footer { background:#595755; width:100%; height:120px; margin:0px 0px 0 0px; padding:50px 0 0 0px; letter-spacing:-1px; position:relative  }*/
+footer{background:#f1f1f1; height:100px; margin: 10px 15px 20px 10px;}
+/* End Foote
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Social
+--------------------------------------------------------------------------------------------------------*/
+ul.social { margin-top:25px; margin-bottom:0px; letter-spacing:0; }
+.social li { display:inline-block; margin:0px 7px;}
+.social li a { display:block; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+ul.social a {text-indent:-9000px; text-decoration:none; height:24px; width:24px;}
+.xing {background:url(../images/bg-xing.png) no-repeat; background-size:24px 24px; }
+.tweat {background:url(../images/bg-tweat.png) no-repeat; background-size:24px 24px; } 
+.google {background:url(../images/bg-googleplus.png) no-repeat; background-size:24px 24px; }
+.facebook {background:url(../images/bg-facebook.png) no-repeat; background-size:24px 24px; }
+.pinterest {background:url(../images/bg-pinterest.png) no-repeat; background-size:24px 24px; }
+.instagram {background:url(../images/bg-instagram.png) no-repeat; background-size:24px 24px; }
+.vimeo {background:url(../images/bg-vimeo.png) no-repeat; background-size:24px 24px; }
+.skype {background:url(../images/bg-skype.png) no-repeat; background-size:24px 24px; }
+.dribble {background:url(../images/bg-dribble.png) no-repeat; background-size:24px 24px; }
+/* End Social
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Isotope
+--------------------------------------------------------------------------------------------------------*/
+.isotope-item { z-index: 2; }
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+/**** Isotope CSS3 transitions ****/
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; }
+.isotope { -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
+.isotope .isotope-item { -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property:    -moz-transform, opacity; -ms-transition-property:     -ms-transform, opacity; -o-transition-property:         top, left, opacity; transition-property:         transform, opacity; }
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
+
+#menu-container {position:absolute; width:298px; height:auto; min-height:221px; background:#fff;} /*border:1px solid #ddd;}*/
+
+#options {  text-align:left; margin-top:0px; }
+#options ul { margin: 0; list-style: none; display:inline-block; bottom:22px; position:absolute; }
+#options li { float: none;  }
+#options li a { color:#a5a5a5; font-family: "WenQuanYi Zen Hei", Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; letter-spacing:0px; text-decoration:none; /*text-transform:uppercase;*/ display:inline-block; padding:3px 30px;  margin:0px; }
+#options li a:hover, #options li a.selected { color:#595755;}
+
+ul#nav-lang {position:absolute; bottom:22px; right:0px; text-align:right; }
+ul#nav-lang li { float: none;  }
+ul#nav-lang li a { color:#a5a5a5; font-family: "WenQuanYi Zen Hei", Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; letter-spacing:0px; text-decoration:none; /*text-transform:uppercase;*/ display:inline-block; padding:3px 30px;  margin:0px; }
+ul#nav-lang li a:hover, ul#nav-lang li a.selected { color:#595755;}
+/* End Isotope
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Backtotop
+--------------------------------------------------------------------------------------------------------*/
+#backtotop { height:auto; position:fixed; right:30px; bottom:30px; display:none; z-index:30; }
+#backtotop ul { padding:15px 0px; }
+#backtotop ul li a { background:url(../images/bg-up.png) center 48% no-repeat #f97220; background-size:22px 15px; display:block; width:50px; height:50px; float:right; right:10px; text-indent:-9000px; -webkit-box-shadow:0 0 30px rgba(0, 0, 0, 0.1); -moz-box-shadow:0 0 30px rgba(0, 0, 0, 0.1); box-shadow:0 0 30px rgba(0, 0, 0, 0.1);}
+#backtotop ul li a:hover { -webkit-box-shadow:0 0 30px rgba(0, 0, 0, 0); -moz-box-shadow:0 0 30px rgba(0, 0, 0, 0); box-shadow:0 0 30px rgba(0, 0, 0, 0); }
+/* End Backtotop
+--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.preloader { background:url(../images/ajax-loader.gif) center center no-repeat #ffffff; }
+
+
+
