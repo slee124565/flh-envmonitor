@@ -26,7 +26,7 @@ var connection = mysql.createConnection({
 */
 var host = 'localhost';
 var user = 'root';
-var password = 'demo2015';
+var password = 'demosql';
 var database = 'flh';
 
 var power = [1899];
