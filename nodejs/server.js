@@ -140,7 +140,7 @@ router.get('/demo/set/event/:log',function(req,res){
 			time: now_time,
 			log: req.params.log
 			};
-		connection.query('INSERT INTO `' + tab_Event+ '` SET ?', data, function(err, results) {
+		connection.query('update `' + tab_Event+ '` SET ? where `id`=1', data, function(err, results) {
 		if (err) {
 			throw err;
 		}
@@ -200,7 +200,7 @@ router.get('/demo/set/:name/:mode',function(req,res){
 			time: now_time,
 			mode: req.params.mode
 			};
-		connection.query('INSERT INTO `' + tab_Demo+ '` SET ?', data, function(err, results) {
+		connection.query('update `' + tab_Demo+ '` SET ? where `id`=1', data, function(err, results) {
 		if (err) {
 			throw err;
 		}
