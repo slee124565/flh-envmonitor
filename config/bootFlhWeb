@@ -1,0 +1,47 @@
+#!/bin/bash -x
+
+#nodejs /var/FLH-Web/nodejs/server.js >> /var/FLH-Log/nodejs/server_`date +%Y%m%d`.log 2>&1 &
+
+removeOldFiles()
+{
+        if [ -z $1 ] || [ ! -d $1 ]; then
+                echo "no folder to clean!"
+                exit 1
+        else
+                #echo "=== remove expired files in $1 ==="
+                cd $1
+        fi
+        currentDay=$(date +"%j")
+        if [ -z $2 ]; then
+                dayKeep=5
+        else
+                dayKeep=$2
+        fi
+        expiredDate=$(date --date="-$dayKeep days" "+%Y-%m-%d %H:%M:%S")
+        echo "=== remove expired files in $1 : expired time: $expiredDate ==="
+        for filename in *
+        do
+        if [ ! -d $filename ]; then
+                fileDate=$(date -r $filename "+%Y-%m-%d %H:%M:%S")
+                dateDiff=$(( $(date -u -d"$fileDate" +%s) - $(date -u -d"$expiredDate" +%s)))
+                if [ $dateDiff -lt 0 ]; then
+                        if [ -d $filename ]; then
+                                echo "remove folder $filename ($fileDate)"
+                                rm -rf $filename
+                        else
+                                echo "remove file $filename ($fileDate)"
+                                rm $filename
+                        fi
+                else
+                                echo "keep $filename :: $dateDiff"
+                fi
+        else
+                echo "skip folder $filename"
+        fi
+        done
+}
+
+removeOldFiles /var/FLH-Log/nodejs/ >> /var/FLH-Log/nodejs/server_`date +%Y%m%d`.log 2>&1
+rm -f /PowerLog.txt /var/FLH-Log/nodejs/PowerLog.txt
+nodejs /var/FLH-Web/nodejs/server.js >> /var/FLH-Log/nodejs/server_`date +%Y%m%d`.log 2>&1 &
+
