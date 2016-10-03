@@ -40,7 +40,7 @@
 <script src="js/scrollup.js" type="text/javascript"></script>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script type="text/javascript">
-var publicIP="192.168.10.9";
+var publicIP="";
 
 function set_publicip() {
     $.ajax({

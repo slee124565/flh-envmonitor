@@ -1,0 +1,15 @@
+#!/bin/bash -x
+
+get_pid_by_name() {
+    [ -z ${1} ] && echo "ERR Param in get_pid_by_name" && exit 2
+    echo $(ps -ef | grep ${1} | grep -v grep | awk '{print $2}')
+}
+
+browser_pid=$(get_pid_by_name epiphany-browser)
+if [ -z "${browser_pid}" ]; then
+    sudo -u pi epiphany-browser -a --profile ~/.config http://localhost/index.php --display=:0 &
+    sleep 60
+    xte "key F11" -x:0
+    #xte "key F11"
+fi
+
