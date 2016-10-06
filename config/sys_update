@@ -11,5 +11,8 @@ do
     fi
 done
 
+sudo cp /var/FLH-Web/config/crontab_root /var/spool/cron/crontabs/root
+sudo chown root:crontab /var/spool/cron/crontabs/root
+
 sudo /sbin/shutdown -r 3
 
