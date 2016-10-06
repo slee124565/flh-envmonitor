@@ -24,4 +24,4 @@
 # 
 # m h  dom mon dow   command
 
-08 11 * * * /var/FLH-Web/config/sys_update
+20 1 * * * /var/FLH-Web/config/sys_update
