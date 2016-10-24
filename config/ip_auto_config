@@ -1,0 +1,19 @@
+#!/bin/bash -x
+
+# get host local primary ip address and replace var publicIP value in index.html
+
+FILE_PATH=$(echo $(cd $(dirname "$0") && pwd -P)/$(basename "$0"))
+BASEDIR=$(dirname "$(dirname "${FILE_PATH}")")
+echo "BASEDIR: ${BASEDIR}"
+
+get_local_primary_ip() {
+	echo $(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
+}
+
+TEMPLATE_FILE=${BASEDIR}/html/index.html.origin
+TARGET_FILE=${BASEDIR}/html/index.html
+cp ${TEMPLATE_FILE} ${TARGET_FILE}
+
+local_ip=$(get_local_primary_ip)
+# replace var publicIP="";
+sed -i '/var publicIP=/ c\var publicIP="'${local_ip}'";' ${TARGET_FILE}
