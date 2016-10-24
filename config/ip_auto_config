@@ -16,4 +16,4 @@ cp ${TEMPLATE_FILE} ${TARGET_FILE}
 
 local_ip=$(get_local_primary_ip)
 # replace var publicIP="";
-sed -i '/var publicIP=/ c\var publicIP="'${local_ip}'"' ${TARGET_FILE}
+sed -i '/var publicIP=/ c\var publicIP="'${local_ip}'";' ${TARGET_FILE}
