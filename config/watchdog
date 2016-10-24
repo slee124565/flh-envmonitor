@@ -1,5 +1,15 @@
 #!/bin/bash -x
 
+FILE_PATH=$(echo $(cd $(dirname "$0") && pwd -P)/$(basename "$0"))
+BASEDIR=$(dirname "$(dirname "${FILE_PATH}")")
+echo "BASEDIR: ${BASEDIR}"
+
+INDEX_FILE=/var/FLH-Web/html/index.html
+
+if [ ! -f "${INDEX_FILE}" ]; then
+    sudo ${BASEDIR}/config/ip_auto_config
+fi
+
 get_pid_by_name() {
     [ -z ${1} ] && echo "ERR Param in get_pid_by_name" && exit 2
     echo $(ps -ef | grep ${1} | grep -v grep | awk '{print $2}')
@@ -10,7 +20,7 @@ if [ -z "${browser_pid}" ]; then
     sudo echo `date` >> /var/watchdog.log
     sudo -u pi epiphany-browser -a --profile ~/.config /var/FLH-Web/html/index.html --display=:0 &
     sleep 60
-    xte "key F11" -x:0
+    sudo -u pi xte "key F11" -x:0
     #xte "key F11"
 fi
 

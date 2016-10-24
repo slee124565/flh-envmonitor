@@ -1,3 +1,3 @@
 #!/bin/bash -x
 
-DISPLAY=:0 scrot /var/FLH-Web/html/images/desktop_screen.png
+sudo -u pi DISPLAY=:0 scrot /var/FLH-Web/html/images/desktop_screen.png
