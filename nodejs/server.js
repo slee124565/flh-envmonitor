@@ -1,4 +1,4 @@
-﻿var express = require('express'); 
+var express = require('express'); 
 var fs = require('fs');
 var app = express();
 var mysql = require('mysql');
@@ -382,7 +382,8 @@ router.get('/demo/sensor/:data',function(req,res){
 	user:user,
 	password:password,
 	database:database,
-	port:3306
+	port:3306,
+    acquireTimeout: 1000000
 	});
 	connection.connect();
 	var json;
