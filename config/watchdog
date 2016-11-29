@@ -24,3 +24,9 @@ if [ -z "${browser_pid}" ]; then
     #xte "key F11"
 fi
 
+node_pid=$(get_pid_by_name server.js)
+if [ -z "${node_pid}" ]; then
+    sudo echo 'node event '`date` >> /var/watchdog.log
+    sudo service bootFlhWeb stop
+    sudo service bootFlhWeb start 
+fi
