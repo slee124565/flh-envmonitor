@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -312,13 +312,27 @@ $(document).ready(function() {
 <td>
 <span id="mode1"></span></td>
 <td style="width: 50%;text-align: right;">
-<a href="http://time.is/Taipei" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
-<span id="Taipei_z43f" style="font-size:64px"></span>
-<script src="http://widget.time.is/t.js"></script>
-<script>
-time_is_widget.init({Taipei_z43f:{}});
-</script>
 
+    <!-- clock widget -->
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+<!-- . clock widget -->    
+
+    </td>
 </tr>
 <!--
 <tr>
