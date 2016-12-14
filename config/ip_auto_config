@@ -15,5 +15,9 @@ TARGET_FILE=${BASEDIR}/html/index.html
 cp ${TEMPLATE_FILE} ${TARGET_FILE}
 
 local_ip=$(get_local_primary_ip)
+for addr in $(echo $local_ip | tr " " "\n")
+do
+    local_ip=$addr
+done
 # replace var publicIP="";
 sed -i '/var publicIP=/ c\var publicIP="'${local_ip}'";' ${TARGET_FILE}
