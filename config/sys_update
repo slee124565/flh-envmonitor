@@ -1,12 +1,13 @@
 #!/bin/bash -x
 
 proj_list="/var/FLH-Web"
+git_branch=$(git rev-parse --abbrev-ref HEAD)
 
 for proj in ${proj_list}
 do
     if [ -d ${proj} ]; then
         cd ${proj}
-        git checkout -f && git clean -fx -d && git checkout master && git pull origin master
+        git checkout -f && git clean -fx -d && git checkout ${git_branch} && git pull origin ${git_branch}
         cd -
     fi
 done
