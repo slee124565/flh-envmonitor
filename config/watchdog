@@ -15,6 +15,33 @@ get_pid_by_name() {
     echo $(ps -ef | grep ${1} | grep -v grep | awk '{print $2}')
 }
 
+check_service_n_restart() {
+    [ -z ${1} ] && echo "ERR Param in check_service" && exit 2
+    service=${1}
+    check=$(sudo service ${service} status | grep "active (running)")
+    if [ -z "${check}" ]; then
+        echo "service ${service} status NOT SUCCESS, restart"
+        sudo service ${service} restart
+        service_restart=true
+    else
+        echo "service ${service} status SUCCESS"
+    fi
+}
+
+check_service_n_restart apache2
+check_service_n_restart mysql
+if [ "${service_restart}" = true ]; then
+    echo ip_auto_config
+    sudo ${BASEDIR}/config/ip_auto_config
+fi
+
+node_pid=$(get_pid_by_name server.js)
+if [ -z "${node_pid}" ]; then
+    sudo echo 'node event '`date` >> /var/watchdog.log
+    sudo service bootFlhWeb stop
+    sudo service bootFlhWeb start
+fi
+
 browser_pid=$(get_pid_by_name epiphany-browser)
 if [ -z "${browser_pid}" ]; then
     sudo echo `date` >> /var/watchdog.log
@@ -22,11 +49,4 @@ if [ -z "${browser_pid}" ]; then
     sleep 60
     sudo -u pi xte "key F11" -x:0
     #xte "key F11"
-fi
-
-node_pid=$(get_pid_by_name server.js)
-if [ -z "${node_pid}" ]; then
-    sudo echo 'node event '`date` >> /var/watchdog.log
-    sudo service bootFlhWeb stop
-    sudo service bootFlhWeb start 
 fi
